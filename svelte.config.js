@@ -1,6 +1,10 @@
-import {vitePreprocess} from '@sveltejs/vite-plugin-svelte'
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 export default {
-    preprocess: vitePreprocess(),
-    compatibility: {componentApi: '4'}
-}
+  preprocess: vitePreprocess(),
+  compilerOptions: {
+    compatibility: {
+      componentApi: 4
+    },
+  },
+};
